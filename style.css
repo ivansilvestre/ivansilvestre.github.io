@@ -9,6 +9,16 @@ body {
   flex-direction: column;
 }
 
+.name {
+  font-size: 28px;
+  margin: 0;
+}
+
+.description {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
 .container {
   width: 100%;
   max-width: 650px;
@@ -72,15 +82,5 @@ footer {
   position: fixed;
   bottom: 0;
   color: #fbfafb;
-  margin-bottom: 24px;
-}
-
-.name {
-  font-size: 28px;
-  margin: 0;
-}
-
-.description {
-  margin-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
