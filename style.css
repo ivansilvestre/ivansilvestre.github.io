@@ -78,6 +78,44 @@ a {
   fill: #fbfafb;
 }
 
+.form-container {
+  width: 650px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.form-control {
+  width: 60%;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.col.name,
+.col.email {
+  height: 42px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  color: #fbfafb;
+  background-color: #4e4d5c;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:hover {
+  color: #fbfafb;
+  background-color: #2e2d33;
+}
+
 footer {
   position: fixed;
   bottom: 0;
