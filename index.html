@@ -93,16 +93,14 @@
       <form action="https://formspree.io/f/xnqyojaz" method="POST">
         <div class="form-group">
           <div class="form-row">
-            <div class="col name">
-              <input type="text" name="name" class="form-control" placeholder="Name" required>
-            </div>
-            <div class="col email">
-              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <div class="col name-email">
+              <input type="text" name="name" class="form-control person-name" placeholder="Name" required>
+              <input type="email" name="email" class="form-control person-email" placeholder="Email" required>
             </div>
           </div>
         </div>
         <div class="col message">
-          <textarea placeholder="Message" class="form-control" name="message" rows="10"  required></textarea>
+          <textarea placeholder="Message" class="form-control person-message" name="message" rows="5"  required></textarea>
         </div>
         <button type="submit" class="button"><strong>Submit</strong></button>
       </form>
