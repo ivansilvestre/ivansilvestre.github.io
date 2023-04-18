@@ -125,11 +125,3 @@ button {
 button:hover {
   background-color: var(--dark-color);
 }
-
-footer {
-  position: fixed;
-  bottom: 0;
-  color: var(--white-color);
-  margin-bottom: 16px;
-  font-size: 14px;
-}
