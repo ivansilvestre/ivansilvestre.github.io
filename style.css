@@ -95,34 +95,32 @@ a {
   fill: var(--white-color);
 }
 
+.scroll-info {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .form-container {
+  margin-top: 4rem;
   width: 80%;
   text-align: center;
 }
 
-.form-control {
-  width: 100%;
-}
-
-.form-control.person-message {
-  margin-top: 0.25rem;
-  width: 100%;
-}
-
 .col {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.6rem;
 }
 
-.col.name-email {
+.name-email {
   height: 2rem;
-  display: flex;
-  justify-content: space-around;
+  font-size: 1rem;
 }
 
-textarea {
-  resize: none;
+.message {
+  font-size: 1rem;
 }
 
 button {
@@ -130,7 +128,7 @@ button {
   background-color: var(--tile-color);
   padding: 0.5rem 0.875rem;
   cursor: pointer;
-  margin: 0.5rem 0 0.75rem;
+  margin: 1rem;
 }
 
 button:hover {
