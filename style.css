@@ -95,6 +95,11 @@ a {
   fill: var(--white-color);
 }
 
+.cls-1 {
+  stroke: var(--tile-color);
+  stroke-width: 20px;
+}
+
 .scroll-info {
   margin-top: 4rem;
   font-size: 1.5rem;
