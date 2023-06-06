@@ -114,11 +114,6 @@ a {
   margin-bottom: 0.6rem;
 }
 
-.cls-1 {
-  stroke: var(--tile-color);
-  stroke-width: 20px;
-}
-
 .name-email {
   height: 2rem;
   font-size: 1rem;
