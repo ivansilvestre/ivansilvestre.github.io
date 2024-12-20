@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --main-color: black;
-  --grey-color: #2e2d33;
-  --secondary-color: #32cd32;
+  --main-color: #15202b;
+  --grey-color: #15202b;
+  --secondary-color: #fff;
 }
 
 html {
