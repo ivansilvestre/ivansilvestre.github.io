@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://ivansilvestre.github.io/",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
