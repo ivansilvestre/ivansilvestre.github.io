@@ -1,7 +1,8 @@
 const Card = ({ href, label, icon }) => {
   return (
     <a
-      className="w-full bg-[var(--main-color)] m-1 rounded-lg flex border border-[var(--secondary-color)] hover:bg-[var(--grey-color)]"
+      className="w-full bg-[var(--main-color)] m-1 rounded-lg flex border border-[var(--secondary-color)] 
+      hover:bg-[var(--option-color)] text-[1rem] hover:text-[1.3rem]"
       target="_blank"
       href={href}
     >
