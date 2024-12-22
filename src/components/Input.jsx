@@ -6,7 +6,8 @@ const Input = ({ type, name, placeholder }) => {
       <input
         type={type}
         name={name}
-        className="form-control h-8 text-base text-[var(--main-color)]"
+        className="form-control h-8 bg-[var(--main-color)] border border-[var(--secondary-color)] 
+        text-base text-[var(--secondary-color)]"
         placeholder={placeholder}
         required
       />

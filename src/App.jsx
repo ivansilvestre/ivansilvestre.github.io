@@ -1,21 +1,34 @@
+import { useTheme } from "next-themes";
+import { MoonIcon, SunIcon } from "./assets/icons";
 import { socialLinks } from "./assets/socialLinks";
 import Card from "./components/Card";
 import Input from "./components/Input";
 import InputSection from "./components/InputSection";
 import ScrollInfo from "./components/ScrollInfo";
 import Section from "./components/Section";
+import Text from "./components/Text";
 
 const App = () => {
+  const { theme, setTheme } = useTheme();
+
   return (
     <>
       <Section>
+        <div className="w-full flex justify-end">
+          <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+          </button>
+        </div>
         <img
-          className="h-[100px] w-[100px] rounded-full overflow-hidden mb-4"
+          className="h-[100px] w-[100px] rounded-full overflow-hidden mb-2"
           src="https://avatars.githubusercontent.com/u/31860787?v=4"
           alt="my-pic"
         />
-        <h1 className="text-[2rem] m-0">Ivan Silvestre</h1>
-        <h5 className="mt-2 mb-16">🇵🇹 web developer && musician 🎷</h5>
+        <Text className="text-[2rem]" text="Ivan Silvestre" />
+        <Text
+          className="text-[1rem] mt-2 mb-10"
+          text="🇵🇹 web developer & musician 🎷"
+        />
         {socialLinks.map((item) => (
           <Card
             key={item.label}
@@ -40,7 +53,8 @@ const App = () => {
           <InputSection>
             <textarea
               placeholder="Message"
-              className="form-control text-base text-[var(--main-color)]"
+              className="form-control bg-[var(--main-color)] border border-[var(--secondary-color)] 
+              text-base text-[var(--secondary-color)]"
               name="message"
               rows="8"
               required
@@ -48,7 +62,8 @@ const App = () => {
           </InputSection>
           <button
             type="submit"
-            className="text-[var(--secondary-color)] bg-[var(--main-color)] px-3.5 py-2 cursor-pointer m-4 border border-[var(--secondary-color)] hover:bg-[var(--grey-color)]"
+            className="text-[var(--secondary-color)] bg-[var(--main-color)] px-3.5 py-2 cursor-pointer 
+            m-4 border border-[var(--secondary-color)] hover:bg-[var(--option-color)]"
           >
             <strong>Submit</strong>
           </button>

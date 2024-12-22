@@ -4,8 +4,20 @@
 
 :root {
   --main-color: #15202b;
-  --grey-color: #2a4057;
   --secondary-color: #fff;
+  --option-color: #2a4057;
+}
+
+.dark {
+  --main-color: #15202b;
+  --secondary-color: #fff;
+  --option-color: #2a4057;
+}
+
+.light {
+  --main-color: #fff;
+  --secondary-color: #667;
+  --option-color: #ddd;
 }
 
 html {
@@ -14,11 +26,9 @@ html {
 
 body {
   font-family: Verdana, sans-serif;
-  background-color: var(--main-color);
-  color: var(--secondary-color);
-  margin: auto 2rem;
+  @apply bg-[var(--main-color)] text-[var(--secondary-color)] m-auto px-8;
 }
 
 .icon svg path {
-  fill: var(--secondary-color);
+  @apply fill-[var(--secondary-color)];
 }
