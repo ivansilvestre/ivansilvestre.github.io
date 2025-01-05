@@ -1,10 +1,21 @@
-import { BlueskyIcon, GithubIcon, SignalIcon, YoutubeIcon } from "./icons";
+import {
+  BlueskyIcon,
+  GalleryIcon,
+  GithubIcon,
+  SignalIcon,
+  YoutubeIcon,
+} from "./icons";
 
 export const socialLinks = [
   {
     label: "Bluesky",
     href: "https://bsky.app/profile/ivansilvestre.bsky.social",
     icon: BlueskyIcon,
+  },
+  {
+    label: "Artistic Gallery",
+    href: "/gallery",
+    icon: GalleryIcon,
   },
   {
     label: "Github",
