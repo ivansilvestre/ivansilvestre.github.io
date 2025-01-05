@@ -1,7 +1,10 @@
 import { useTheme } from "next-themes";
+import { useState } from "react";
 import { MoonIcon, SunIcon } from "./assets/icons";
+import { images } from "./assets/images";
 import { socialLinks } from "./assets/socialLinks";
 import Card from "./components/Card";
+import Gallery from "./components/Gallery";
 import Input from "./components/Input";
 import InputSection from "./components/InputSection";
 import ScrollInfo from "./components/ScrollInfo";
@@ -10,6 +13,7 @@ import Text from "./components/Text";
 
 const App = () => {
   const { theme, setTheme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -33,10 +37,18 @@ const App = () => {
           <Card
             key={item.label}
             label={item.label}
-            href={item.href}
+            href={item.label !== "My Gallery" ? item.href : undefined}
             icon={item.icon}
+            onClick={() => item.label === "My Gallery" && setIsOpen(true)}
           />
         ))}
+
+        <Gallery
+          isOpen={isOpen}
+          onClose={() => setIsOpen(false)}
+          images={images}
+        />
+
         <ScrollInfo
           description1="to say hi by email..."
           description2="( scroll page down )"

@@ -13,8 +13,8 @@ export const socialLinks = [
     icon: BlueskyIcon,
   },
   {
-    label: "Artistic Gallery",
-    href: "/gallery",
+    label: "My Gallery",
+    href: "",
     icon: GalleryIcon,
   },
   {
