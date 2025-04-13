@@ -49,10 +49,7 @@ const App = () => {
           images={images}
         />
 
-        <ScrollInfo
-          description1="to say hi by email..."
-          description2="( scroll page down )"
-        />
+        <ScrollInfo description="to say hi by email..." isForm={false} />
       </Section>
       <Section>
         <form
@@ -80,10 +77,7 @@ const App = () => {
             <strong>Submit</strong>
           </button>
         </form>
-        <ScrollInfo
-          description1="back to main page"
-          description2="( scroll page up )"
-        />
+        <ScrollInfo description="back to main page" isForm />
       </Section>
     </>
   );
