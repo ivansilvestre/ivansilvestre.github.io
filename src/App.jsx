@@ -14,6 +14,7 @@ import Text from "./components/Text";
 const App = () => {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
+  const GALLERY = "My Gallery";
 
   return (
     <>
@@ -37,9 +38,9 @@ const App = () => {
           <Card
             key={item.label}
             label={item.label}
-            href={item.label !== "My Gallery" ? item.href : undefined}
+            href={item.label !== GALLERY ? item.href : undefined}
             icon={item.icon}
-            onClick={() => item.label === "My Gallery" && setIsOpen(true)}
+            onClick={() => item.label === GALLERY && setIsOpen(true)}
           />
         ))}
 
