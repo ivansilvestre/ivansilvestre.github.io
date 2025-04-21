@@ -25,13 +25,13 @@ const App = () => {
           </button>
         </div>
         <img
-          className="hidden xs:block h-[70px] w-[70px] md:h-[100px] md:w-[100px] rounded-full overflow-hidden mb-2"
+          className="xs:block h-[70px] w-[70px] xs:h-[100px] xs:w-[100px] rounded-full overflow-hidden mb-2"
           src="https://avatars.githubusercontent.com/u/31860787?v=4"
           alt="my-pic"
         />
-        <Text className="text-[1.2rem] sm:text-[2rem]" text="Ivan Silvestre" />
+        <Text className="text-[1.2rem] xs:text-[2rem]" text="Ivan Silvestre" />
         <Text
-          className="text-[0.9rem] sm:text-[1rem] mt-1 mb-4 sm:mt-2 sm:mb-10"
+          className="text-[0.9rem] sm:text-[1rem] mt-1 mb-4 xs:mb-10 xs:mt-2 xs:mb-10"
           text="🇵🇹 web developer & musician 🎷"
         />
         {socialLinks.map((item) => (

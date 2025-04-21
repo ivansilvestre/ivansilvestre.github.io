@@ -1,5 +1,4 @@
 import {
-  BlogIcon,
   BlueskyIcon,
   GalleryIcon,
   GithubIcon,
@@ -8,11 +7,6 @@ import {
 } from "./icons";
 
 export const socialLinks = [
-  {
-    label: "o cantinho do ivan",
-    href: "https://ivansilvestre.bearblog.dev/blog/",
-    icon: BlogIcon,
-  },
   {
     label: "Bluesky",
     href: "https://bsky.app/profile/ivansilvestre.bsky.social",
