@@ -25,7 +25,7 @@ const App = () => {
           </button>
         </div>
         <img
-          className="xs:block h-[70px] w-[70px] xs:h-[100px] xs:w-[100px] rounded-full overflow-hidden mb-2"
+          className="hidden xs:block h-[70px] w-[70px] xs:h-[100px] xs:w-[100px] rounded-full overflow-hidden mb-2"
           src="https://avatars.githubusercontent.com/u/31860787?v=4"
           alt="my-pic"
         />

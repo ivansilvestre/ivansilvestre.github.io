@@ -2,7 +2,7 @@ const Card = ({ href, label, icon, onClick }) => {
   return (
     <a
       className="w-full bg-[var(--main-color)] m-1 rounded-lg flex border border-[var(--secondary-color)] 
-      hover:bg-[var(--option-color)] text-[1rem] hover:text-[1.3rem]"
+    hover:bg-[var(--option-color)] text-[1rem] hover:scale-105 transition-transform duration-200"
       target="_blank"
       href={href}
       onClick={onClick}
