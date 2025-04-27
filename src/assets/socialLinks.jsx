@@ -3,7 +3,6 @@ import {
   GalleryIcon,
   GithubIcon,
   MastodonIcon,
-  SignalIcon,
   YoutubeIcon,
 } from "./icons";
 
@@ -27,10 +26,6 @@ export const socialLinks = [
     label: "Github",
     href: "https://github.com/ivansilvestre",
     icon: GithubIcon,
-  },
-  {
-    label: "@ivansilvestre.01",
-    icon: SignalIcon,
   },
   {
     label: "Youtube",

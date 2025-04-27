@@ -31,8 +31,12 @@ const App = () => {
         />
         <Text className="text-[1.2rem] xs:text-[2rem]" text="Ivan Silvestre" />
         <Text
-          className="text-[0.9rem] sm:text-[1rem] mt-1 mb-4 xs:mb-10 xs:mt-2 xs:mb-10"
+          className="text-[0.9rem] sm:text-[1rem] mt-1 xs:mt-2"
           text="🇵🇹 web developer & musician 🎷"
+        />
+        <Text
+          className="text-[0.9rem] sm:text-[1rem] mt-2 mb-6 font-bold"
+          text="Signal: @ivansilvestre.01"
         />
         {socialLinks.map((item) => (
           <Card
