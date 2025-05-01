@@ -1,17 +1,6 @@
-import {
-  BlueskyIcon,
-  GalleryIcon,
-  GithubIcon,
-  MastodonIcon,
-  YoutubeIcon,
-} from "./icons";
+import { BlueskyIcon, GalleryIcon, GithubIcon, YoutubeIcon } from "./icons";
 
 export const socialLinks = [
-  {
-    label: "Mastodon",
-    href: "https://floss.social/@ivansilvestre",
-    icon: MastodonIcon,
-  },
   {
     label: "Bluesky",
     href: "https://bsky.app/profile/ivansilvestre.bsky.social",
