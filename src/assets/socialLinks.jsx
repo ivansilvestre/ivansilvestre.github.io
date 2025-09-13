@@ -1,11 +1,6 @@
-import { GalleryIcon, GithubIcon, LichessIcon, YoutubeIcon } from "./icons";
+import { GalleryIcon, GithubIcon, YoutubeIcon } from "./icons";
 
 export const socialLinks = [
-  {
-    label: "Lichess",
-    href: "https://lichess.org/@/UnsungPerson",
-    icon: LichessIcon,
-  },
   {
     label: "My Gallery",
     href: "",
