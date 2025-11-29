@@ -1,6 +1,11 @@
-import { GalleryIcon, GithubIcon, YoutubeIcon } from "./icons";
+import { GalleryIcon, GithubIcon, InstagramIcon, YoutubeIcon } from "./icons";
 
 export const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/ivansilvestre.01/",
+    icon: InstagramIcon,
+  },
   {
     label: "My Gallery",
     href: "",
