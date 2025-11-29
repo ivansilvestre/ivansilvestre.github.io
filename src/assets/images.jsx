@@ -1,144 +1,52 @@
-const imagesUrl = (id) => {
-  return `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
-};
+import img1 from '../assets/photos/img1.jpg';
+import img10 from '../assets/photos/img10.jpg';
+import img11 from '../assets/photos/img11.jpg';
+import img12 from '../assets/photos/img12.jpg';
+import img13 from '../assets/photos/img13.jpg';
+import img14 from '../assets/photos/img14.jpg';
+import img15 from '../assets/photos/img15.jpg';
+import img16 from '../assets/photos/img16.jpg';
+import img17 from '../assets/photos/img17.jpg';
+import img18 from '../assets/photos/img18.jpg';
+import img19 from '../assets/photos/img19.jpg';
+import img2 from '../assets/photos/img2.jpg';
+import img20 from '../assets/photos/img20.jpg';
+import img21 from '../assets/photos/img21.jpg';
+import img22 from '../assets/photos/img22.jpg';
+import img23 from '../assets/photos/img23.jpg';
+import img24 from '../assets/photos/img24.jpg';
+import img25 from '../assets/photos/img25.jpg';
+import img26 from '../assets/photos/img26.jpg';
+import img27 from '../assets/photos/img27.jpg';
+import img28 from '../assets/photos/img28.jpg';
+import img29 from '../assets/photos/img29.jpg';
+import img3 from '../assets/photos/img3.jpg';
+import img30 from '../assets/photos/img30.jpg';
+import img31 from '../assets/photos/img31.jpg';
+import img32 from '../assets/photos/img32.jpg';
+import img33 from '../assets/photos/img33.jpg';
+import img34 from '../assets/photos/img34.jpg';
+import img35 from '../assets/photos/img35.jpg';
+import img36 from '../assets/photos/img36.jpg';
+import img37 from '../assets/photos/img37.jpg';
+import img38 from '../assets/photos/img38.jpg';
+import img39 from '../assets/photos/img39.jpg';
+import img4 from '../assets/photos/img4.jpg';
+import img40 from '../assets/photos/img40.jpg';
+import img41 from '../assets/photos/img41.jpg';
+import img42 from '../assets/photos/img42.jpg';
+import img5 from '../assets/photos/img5.jpg';
+import img6 from '../assets/photos/img6.jpg';
+import img7 from '../assets/photos/img7.jpg';
+import img8 from '../assets/photos/img8.jpg';
+import img9 from '../assets/photos/img9.jpg';
 
-export const images = [
-  {
-    src: imagesUrl("1En1hPEzC1XGfwMetL4f5bwGzXQy_p0Yv"),
-  },
-  {
-    src: imagesUrl("1t3Sizj3f3BL8pHMIjKrt6DiDYWRDgB21"),
-  },
-  {
-    src: imagesUrl("1KmZWAC_xDJmQwVVelhOg8P3P1SchXLwu"),
-  },
-  {
-    src: imagesUrl("1P9Bc-JQxWKb8M2uWlZ8DRALVWCCGj9Fw"),
-  },
-  {
-    src: imagesUrl("1n-AbyrMZ7EkRNOw199b1o8rRVlUHj7ni"),
-  },
-  {
-    src: imagesUrl("1bgXHkLE999oNLXOx9Ok1ZoIfx2AJYoxM"),
-  },
-  {
-    src: imagesUrl("1gpjdSIBRJa5UKVUSb9_8gk9KEHQzQucd"),
-  },
-  {
-    src: imagesUrl("1KxRo-7mo_iQfgQBGtFAqln-jwzJDXGWH"),
-  },
-  {
-    src: imagesUrl("1aQ3zMSTSCaO2Nhqy8p2l_KTs0D36ECq3"),
-  },
-  {
-    src: imagesUrl("1mXUKbwADTZE8aIQbG2IIo9VtmzjFg7lQ"),
-  },
-  {
-    src: imagesUrl("1JuvLQP9r0n0bEltQBaHMPYsqNfoWtQEG"),
-  },
-  {
-    src: imagesUrl("1Yt8KiiW-Btk2REu1xy9sUneUJcEAR9Yt"),
-  },
-  {
-    src: imagesUrl("1IzqW47frp96xqwcikDIOkQ1qAutzugan"),
-  },
-  {
-    src: imagesUrl("1M4lIfq6So3FPqP93R84lESktsNbmK43Y"),
-  },
-  {
-    src: imagesUrl("11eaRlEih2mxD9aCA6ISHyj2zys5T_mWh"),
-  },
-  {
-    src: imagesUrl("1z_-huTYLFGgAnz68ICQ7W1mi1eDTntOe"),
-  },
-  {
-    src: imagesUrl("1nLE1UJwGZE3tVH0tDFc0fIvpYo_A9aoq"),
-  },
-  {
-    src: imagesUrl("1xJw1yqErSIcbQPgT1cXIpHeIhKrAZcAC"),
-  },
-  {
-    src: imagesUrl("1YbF_QF4Qmb3etZSxC3lx0vYYkUngCUqO"),
-  },
-  {
-    src: imagesUrl("1O0aaS-TxJf_z8dcUXtwmlmBOHeadvoxh"),
-  },
-  {
-    src: imagesUrl("1YDbMvoxTEmckqQoZSCYo1Ie4VPEc0av9"),
-  },
-  {
-    src: imagesUrl("1uRisEksWo61Qo-8HwIWT5Vy5EbwqB6yT"),
-  },
-  {
-    src: imagesUrl("1V-QOLxm-vXrx9cLkJcHBy6biqlcLeN5G"),
-  },
-  {
-    src: imagesUrl("1WIn-CWiSBdVg6tOtOuG1vZmSZwzo8bZh"),
-  },
-  {
-    src: imagesUrl("1WQ5hrXVGw8GINF9eo-NK9IboUArUSq_e"),
-  },
-  {
-    src: imagesUrl("1rUVK5cnWLnN-_FpSE17ubMULadePs1TA"),
-  },
-  {
-    src: imagesUrl("1LuGdXH2Ii8C6d7MySFvGFSn0-alg6E4a"),
-  },
-  {
-    src: imagesUrl("11Nx-SZ-XA5vdw0PPE2ta2jJIsa1TjmMK"),
-  },
-  {
-    src: imagesUrl("1EeYZ5UAOEj9X56beD_yMy_9k_mal0yl8"),
-  },
-  {
-    src: imagesUrl("1e11cxqes7tWXTjO07zkxG7HohCZHvfz_"),
-  },
-  {
-    src: imagesUrl("1_IDbv9Ff8TTS5MPLlMjdAV5GwOdmiOCE"),
-  },
-  {
-    src: imagesUrl("19hoJtK7lU786NoaQnVp3eRk9n7ynp-_0"),
-  },
-  {
-    src: imagesUrl("1ki_BIza3oM9n0c3MyqtcYOFfHlesaf2m"),
-  },
-  {
-    src: imagesUrl("1rXiGSjP3VE6bQifzlIWVZpDQ9iZvBwpq"),
-  },
-  {
-    src: imagesUrl("1KgkB9YBnvdqOeurfiAmGw9ny7XoApXuC"),
-  },
-  {
-    src: imagesUrl("1KdBTVB9eSeMC6mUsfBK-FOXrWBIcauOK"),
-  },
-  {
-    src: imagesUrl("1mVTiIjatvKQgny-sZJnHW7QvRlHdFOef"),
-  },
-  {
-    src: imagesUrl("1WFLvB2mW40VJz13C_UApBeU7My463sUy"),
-  },
-  {
-    src: imagesUrl("1X3NysqHNxeyeGu4B_i8ZwAb98VXrhKK_"),
-  },
-  {
-    src: imagesUrl("1hWQWfv6llNk4_e0n2tBVJH6oGAUWvcOM"),
-  },
-  {
-    src: imagesUrl("1HaFfCOxD-2mAhcEeGCH0_B0CmSoYhl5m"),
-  },
-  {
-    src: imagesUrl("1vEN5gSe2OWG8QIwJ4szxKSWhGXKLmNaL"),
-  },
-  {
-    src: imagesUrl("1nw99wJiQlLV859BbMBPg1vnGI5PtiiYj"),
-  },
-  {
-    src: imagesUrl("1cWG53BmUXhEG1kIlzaYiSLYT19_0zjXn"),
-  },
-  {
-    src: imagesUrl("1H1deMr4lntWHHAkaNJOtY6HGLBEV2_Db"),
-  },
-  {
-    src: imagesUrl("1J6L9IxdAlmopSXf4QlnmCnDRKdvKo4mo"),
-  },
+const imgs = [
+    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+    img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
+    img21, img22, img23, img24, img25, img26, img27, img28, img29, img30,
+    img31, img32, img33, img34, img35, img36, img37, img38, img39, img40,
+    img41, img42,
 ];
+
+export const images = imgs.map(src => ({ src }));
