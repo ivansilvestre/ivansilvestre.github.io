@@ -1,0 +1,1 @@
+var e=`/assets/img38-Ds_SZIOG.jpg`;export{e as default};

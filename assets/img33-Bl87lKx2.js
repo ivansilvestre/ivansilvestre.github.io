@@ -1,0 +1,1 @@
+var e=`/assets/img33-gNF56he2.jpg`;export{e as default};
