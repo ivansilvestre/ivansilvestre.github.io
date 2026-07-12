@@ -1,7 +1,6 @@
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { MoonIcon, SunIcon } from "./assets/icons";
-import { images } from "./assets/images";
 import { socialLinks } from "./assets/socialLinks";
 import Card from "./components/Card";
 import Gallery from "./components/Gallery";
@@ -10,17 +9,49 @@ import InputSection from "./components/InputSection";
 import ScrollInfo from "./components/ScrollInfo";
 import Section from "./components/Section";
 import Text from "./components/Text";
+import Toast from "./components/Toast";
+
+const TOAST_MESSAGES = {
+  success: "Message sent successfully",
+  error: "Something went wrong. Please try again.",
+};
 
 const App = () => {
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
+  const [status, setStatus] = useState("idle");
   const GALLERY = "My Gallery";
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    setStatus("sending");
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      setStatus(response.ok ? "success" : "error");
+      if (response.ok) form.reset();
+    } catch {
+      setStatus("error");
+    }
+
+    setTimeout(() => setStatus("idle"), 4000);
+  };
 
   return (
     <>
       <Section>
         <div className="w-full flex justify-end">
-          <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          <button
+            className="cursor-pointer"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          >
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
         </div>
@@ -38,21 +69,18 @@ const App = () => {
           className="text-[0.9rem] sm:text-[1rem] mt-2 mb-6 font-bold"
           text="Signal: @ivansilvestre.01"
         />
-        {socialLinks.map((item) => (
+        {socialLinks.map((item, index) => (
           <Card
             key={item.label}
             label={item.label}
             href={item.label !== GALLERY ? item.href : undefined}
             icon={item.icon}
             onClick={() => item.label === GALLERY && setIsOpen(true)}
+            delay={index * 60}
           />
         ))}
 
-        <Gallery
-          isOpen={isOpen}
-          onClose={() => setIsOpen(false)}
-          images={images}
-        />
+        <Gallery isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
         <ScrollInfo description="to say hi by email..." isForm={false} />
       </Section>
@@ -61,6 +89,7 @@ const App = () => {
           className="mt-16 w-4/5 text-center"
           action="https://formspree.io/f/xnqyojaz"
           method="POST"
+          onSubmit={handleSubmit}
         >
           <Input type="text" name="name" placeholder="Name" />
           <Input type="email" name="email" placeholder="Email" />
@@ -76,14 +105,16 @@ const App = () => {
           </InputSection>
           <button
             type="submit"
-            className="text-[var(--secondary-color)] bg-[var(--main-color)] px-3.5 py-2 cursor-pointer 
-            m-4 border border-[var(--secondary-color)] hover:bg-[var(--option-color)]"
+            disabled={status === "sending"}
+            className="text-[var(--secondary-color)] bg-[var(--main-color)] px-3.5 py-2 cursor-pointer
+            m-4 border border-[var(--secondary-color)] hover:bg-[var(--option-color)] disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <strong>Submit</strong>
+            <strong>{status === "sending" ? "Sending..." : "Submit"}</strong>
           </button>
         </form>
         <ScrollInfo description="back to main page" isForm />
       </Section>
+      <Toast message={TOAST_MESSAGES[status]} />
     </>
   );
 };
